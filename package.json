@@ -1,0 +1,11 @@
+{
+  "name": "contactlist",
+  "version": "1.0.0",
+  "description": "Simple contact list in MEAN stack.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Swaroop C",
+  "license": "ISC"
+}
