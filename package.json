@@ -7,5 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Swaroop C",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@angular/cli": "^12.1.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.0",
+    "ng-cli": "^0.7.0",
+    "nodemon": "^2.0.9"
+  }
 }
