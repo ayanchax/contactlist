@@ -17,11 +17,12 @@ export class ContactService {
   addContact(newContact: ContactSchema) {
     var headers = new Headers();
     headers.append('Content-Type', 'application/json')
-    this.http.post("http://localhost:3000/api/contact", newContact, { headers: headers }).pipe(map(res => res.json()))
+    return this.http.post("http://localhost:3000/api/contact", newContact, { headers: headers }).pipe(map(res => res.json()))
 
   }
 
   deleteContact(id: string) {
-    this.http.delete("http://localhost:3000/api/contact/" + id).pipe(map(res => res.json()))
+    return this.http.delete("http://localhost:3000/api/contact/" + id).pipe(map(res => res.json()))
   }
+
 }

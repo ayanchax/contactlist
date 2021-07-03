@@ -19,9 +19,9 @@ router.post("/contact", (req, res, next) => {
 
     newContact.save((err, contact) => {
         if (err) {
-            res.json({ msg: "Failed to add contact. Details:" + err });
+            res.json({ msg: "Failed to add contact. Details:" + err + "#0" });
         } else {
-            res.json({ msg: "Contact added successfully" });
+            res.json({ msg: "Contact added successfully#1" });
         }
     });
 });
@@ -30,11 +30,11 @@ router.post("/contact", (req, res, next) => {
 router.delete("/contact/:id", (req, res, next) => {
     Contact.deleteOne({ _id: req.params.id }, function(err, result) {
         if (err) {
-            res.json({ msg: "Failed to remove contact. Details:" + err });
+            res.json({ msg: "Failed to remove contact. Details:" + err + "#0" });
         } else {
             if (result.deletedCount == 1)
-                res.json({ msg: "Contact removed successfully" });
-            else res.json({ msg: "Invalid contact." });
+                res.json({ msg: "Contact removed successfully#1" });
+            else res.json({ msg: "Invalid contact#0" });
         }
     });
 });
